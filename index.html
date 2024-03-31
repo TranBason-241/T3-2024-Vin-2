@@ -1,388 +1,599 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-    <!-- Core stylesheet -->
-    <link type="text/css" rel="stylesheet" href="assets/css/fontawesome.min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/general_v2_min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/animate-v4.min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
-    <!-- End stylesheet -->
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-    <title>Nhớ sửa title nhé</title>
-  </head>
+  <!-- Core stylesheet -->
+  <link type="text/css" rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/general_v2_min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/animate-v4.min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+  <!-- End stylesheet -->
 
-  <body>
-    <!-- Document Warpper -->
-    <div id="warpper" class="clearfix">
-      <!-- Top Nav -->
-      <div id="topbar" class="topbar fixed-top clearfix nav-down">
-        <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=""><span class="sr-only">Toggle navigation</span><span class="toggle-icon"></span></button>
-          <a href="https://vnexpress.net/" class="logo" id="logo"><img src="assets/images/logo-150x29.png" alt="VnExpress" class="pc-only img-100" /></a>
-          <div class="block-right">
-            <a href="#box_comment" class="button-comments count_comment" data-target="">
-              <i class="fas fa-comment"></i>
-              <span class="counter">Bình luận</span>
-            </a>
-            <ul class="list-inline social">
-              <li>
-                <a href="javascript:void(0);" class="si-facebook shape-circle social-item fb_share" data-type="fb_share"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="javascript:void(0);" class="si-twitter shape-circle social-item tw_share" data-type="tw_share"><i class="fab fa-twitter"></i></a>
-              </li>
-            </ul>
-            <form action="https://timkiem.vnexpress.net/" method="get" class="block-right">
-              <div class="search">
-                <input autocomplete="off" type="text" class="search-input" placeholder="Tìm kiếm" maxlength="80" name="q" />
-                <span class="search-btn">
-                  <button type="submit">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </span>
-              </div>
-            </form>
-          </div>
+  <title>Nhớ sửa title nhé</title>
+</head>
+
+<body>
+  <!-- Document Warpper -->
+  <div id="warpper" class="clearfix">
+    <!-- Top Nav -->
+    <div id="topbar" class="topbar fixed-top clearfix nav-down">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=""><span class="sr-only">Toggle navigation</span><span class="toggle-icon"></span></button>
+        <a href="https://vnexpress.net/" class="logo" id="logo"><img src="assets/images/logo-150x29.png" alt="VnExpress" class="pc-only img-100" /></a>
+        <div class="block-right">
+          <a href="#box_comment" class="button-comments count_comment" data-target="">
+            <i class="fas fa-comment"></i>
+            <span class="counter">Bình luận</span>
+          </a>
+          <ul class="list-inline social">
+            <li>
+              <a href="javascript:void(0);" class="si-facebook shape-circle social-item fb_share" data-type="fb_share"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="si-twitter shape-circle social-item tw_share" data-type="tw_share"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+          <form action="https://timkiem.vnexpress.net/" method="get" class="block-right">
+            <div class="search">
+              <input autocomplete="off" type="text" class="search-input" placeholder="Tìm kiếm" maxlength="80" name="q" />
+              <span class="search-btn">
+                <button type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
         </div>
       </div>
-      <!-- End Top Nav -->
-      <!-- Menu -->
-      <div class="mask-content"></div>
-      <div id="menu-box" class="menu-box" tabindex="5000">
-        <div class="box_width_common">
-          <div class="block_scoll_menu">
-            <ul class="list_item_panel">
-              <li>
-                <a href="https://vnexpress.net/"><i class="ic ic-m-home"></i>Trang chủ</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/thoi-su"><i class="ic ic-m-news"></i>Thời sự</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/goc-nhin"><i class="ic ic-m-opinion"></i>Góc nhìn</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/the-gioi"><i class="ic ic-m-world"></i>Thế giới</a>
-              </li>
-              <li class="active">
-                <a href="https://vnexpress.net/kinh-doanh"><i class="ic ic-m-business"></i>Kinh doanh</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/giai-tri"><i class="ic ic-m-entertainment"></i>Giải trí</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/the-thao"><i class="ic ic-m-sport"></i>Thể thao</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/phap-luat"><i class="ic ic-m-law"></i>Pháp luật</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/giao-duc"><i class="ic ic-m-education"></i>Giáo dục</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/suc-khoe"><i class="ic ic-m-health"></i>Sức khỏe</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/doi-song"><i class="ic ic-m-family"></i>Đời sống</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/du-lich"><i class="ic ic-m-travel"></i>Du lịch</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/khoa-hoc"><i class="ic ic-m-science"></i>Khoa học</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/so-hoa"><i class="ic ic-m-technology"></i>Số hóa</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/oto-xe-may"><i class="ic ic-m-car"></i>Xe</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/y-kien"><i class="ic ic-m-social"></i>Ý kiến</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/tam-su"><i class="ic ic-m-talk"></i>Tâm sự</a>
-              </li>
-              <li>
-                <a href="https://video.vnexpress.net"><i class="ic ic-m-video"></i>Video</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/anh"><i class="ic ic-m-photo"></i>Ảnh</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/infographics"><i class="ic ic-m-infographic"></i>Infographics</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/cuoi"><i class="ic ic-m-fun"></i>Cười</a>
-              </li>
-              <li>
-                <a href="https://raovat.vnexpress.net"><i class="ic ic-m-ecom"></i>Fsell</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/24h-qua" class="bg_666"><i class="ic ic-m-24h"></i>24h qua</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/lien-he-toa-soan/" class="bg_e8e8"><i class="ic ic-m-contact"></i>Liên hệ Tòa soạn</a>
-              </li>
-              <li class="end">
-                <a href="https://vnexpress.net/contact.htm" class="bg_e8e8"><i class="ic ic-m-mail"></i>Thông tin Tòa soạn</a>
-              </li>
-            </ul>
-            <div class="coppy_right_left width_common">
-              <i class="ic ic-caret-2-down"></i>
-              <div class="txt_coppy_right">
-                <p>&copy; Copyright 1997 - VnExpress.net, All rights reserved</p>
-                <p>&reg; VnExpress giữ bản quyền nội dung trên website này.</p>
-              </div>
-              <div class="txt_lienhe">
-                Hotline: <br />
-                <a href="tel:0838880123">083.888.0123 (Hà Nội)</a> <br />
-                <a href="tel:0822333555">082.233.3555 (TP HCM)</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="ascrail2000" class="nicescroll-rails">
-          <div class="vne-hr1"></div>
-        </div>
-        <div id="ascrail2000-hr" class="nicescroll-rails">
-          <div class="vne-hr2"></div>
-        </div>
-      </div>
-      <!-- End Menu -->
-      <!-- Main Content -->
-      <div class="section-content clearfix">
-        <div class="wrapper-content">
-          <div id="overlay"></div>
-          <div class="my_container">
-            <div class="nav-container">
-              <ul>
-                <li class="odd active-nav">
-                  <p class="">
-                    Vị trí đắc địa<br />
-                    kết nối đa tâm
-                  </p>
-                  <img src="assets/images/btn-decor-2.png" alt="" class="img img-nav-decor n-right" />
-                  <img src="assets/images/btn-active-left.png" alt="" class="img img-nav-decor n-right active-btn" />
-                </li>
-                <li class="even">
-                  <p class="">
-                    “Bộ sưu tập”<br />
-                    tiện ích thượng lưu
-                  </p>
-                  <img src="assets/images/btn-decor-1.png" alt="" class="img img-nav-decor n-left" />
-                  <img src="assets/images/btn-active-right.png" alt="" class="img img-nav-decor n-left active-btn" />
-                </li>
-                <li class="even">
-                  <p class="">
-                    “Bộ sưu tập”<br />
-                    tiện ích thượng lưu
-                  </p>
-                  <img src="assets/images/btn-decor-2.png" alt="" class="img img-nav-decor n-right" />
-                  <img src="assets/images/btn-active-left.png" alt="" class="img img-nav-decor n-right active-btn" />
-                </li>
-                <li class="even" style="margin-right: 0">
-                  <p class="">
-                    “Bộ sưu tập”<br />
-                    tiện ích thượng lưu
-                  </p>
-                  <img src="assets/images/btn-decor-1.png" alt="" class="img img-nav-decor n-left" />
-                  <img src="assets/images/btn-active-right.png" alt="" class="img img-nav-decor n-left active-btn" />
-                </li>
-              </ul>
-              <div class="back-to-home">
-                <i class="fas fa-long-arrow-right"></i>
-                <p>Về trang đầu</p>
-              </div>
-            </div>
-            <div class="page-container">
-              <!-- page-1  HOME --------  -->
-              <div class="page-1 d-none">
-                <div class="group_image group_img_1">
-                  <img loading="lazy" class="eff-screen" src="assets/images/group_1_1.png" alt="" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
-                  <img loading="lazy" src="assets/images/group_1_2.png" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="400" alt="" />
-                  <img src="assets/images/group_1_3.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
-                  <img src="assets/images/group_1_4.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
-                  <img src="assets/images/group_1_5.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
-                </div>
-                <div class="p1-content-1">
-                  <img src="assets/images/decor-2.png" alt="" class="img p1-decor-2" />
-                  <p class="text_title title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="300">
-                    Sân golf 36 hố, học viện cưỡi ngựa, 300 bến đỗ du thuyền… cùng <br />nhiều đặc quyền dành cho giới tinh hoa<br />
-                    đang dần lộ diện tại Vinhomes Royal Island.
-                  </p>
-                  <div class="group-decor-1">
-                    <img src="assets/images/decor-4.png" alt="" class="img p1-decor-4" />
-                    <img src="assets/images/decor-1.png" alt="" class="img p1-decor-1 decor-loop big" />
-                  </div>
-                  <div class="group_text group_text_1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                    <p class="text_content t-content">
-                      Đảo Fisher Island (Florida, Mỹ) được cả thế giới biết đến khi có mật độ triệu phú đông nhất nước Mỹ, là nơi sinh sống của những doanh nhân, ngôi sao hàng đầu thế giới.
-                    </p>
-                    <p class="text_content t-content">
-                      Đảo Indian Creek (Miami, Mỹ) được mệnh danh là “đảo tỷ phú” với hệ thống an ninh khép kín bậc nhất nước Mỹ, quy tụ những nhân vật tầm cỡ nhất xứ cờ hoa như gia đình cựu Tổng
-                      thống Mỹ Donald Trump, danh ca Beyoncé hay tỷ phú Bill Gates.
-                    </p>
-                    <p class="text_content t-content">
-                      Đảo Cọ Palm Jumeirah (Dubai), nơi được coi là “kỳ quan thứ 8” của thế giới, cũng là thiên đường của giới siêu giàu Dubai với những thú vui xa hoa cùng trải nghiệm sống thượng lưu
-                      khó sao chép.
-                    </p>
-                    <p class="text_content t-content">
-                      Vinhomes Royal Island quy mô 877 ha tại Hải Phòng vừa ra mắt thị trường cũng lấy cảm hứng từ những hòn đảo tinh hoa thế giới. Nối tiếp những khu đô thị đã thay đổi diện mạo nhiều
-                      tỉnh, thành phố trên cả nước, với dự án đô thị đảo lần này, Vinhomes sẽ tiếp tục nâng chuẩn sống cho cư dân và dẫn dắt thị trường bằng mô hình đô thị chưa từng có tại Việt Nam.
-                    </p>
-                  </div>
-                  <img src="assets/images/img-1.png" alt="" class="img img-1" />
-                </div>
-
-                <div class="p1-content-2"></div>
-              </div>
-              <!-- page-2 ------------------ -->
-              <div class="page-2 d-none">
-                <div class="p2-content-1">
-                  <img src="assets/images/page-2/decor-1.png" alt="" class="img decor-1" />
-                  <img src="assets/images/page-2/decor-2.png" alt="" class="img decor-2" />
-                  <p class="title">Vị trí đắc địa <br />kết nối đa tâm</p>
-                  <div class="p2-content-1-container">
-                    <img src="assets/images/page-2/img-1.png" alt="" class="img img-1" />
-                    <div class="group_text group_text_1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                      <p class="text_content t-content">
-                        Nằm trên địa bàn huyện Thủy Nguyên và quận Hải An, đảo Vũ Yên được ví như “viên ngọc xanh”, món quà thiên nhiên ban tặng cho đất cảng. Nơi đây vốn là điểm đến giàu tiềm năng
-                        với hệ sinh thái đa dạng cùng cảnh quan sông nước giao hòa, được bao bọc bởi 3 con sông lớn: Bạch Đằng, Cấm và Ruột Lợn.
-                      </p>
-                      <p class="text_content t-content">
-                        Từ lợi thế vị trí và thiên nhiên của vùng đất, Vinhomes kiến tạo tại đây không gian sống xa hoa, định danh “đảo tỷ phú” mới của Việt Nam và cả thế giới.
-                      </p>
-                    </div>
-                  </div>
-                  <img src="assets/images/page-2/img-2.png" alt="" class="img img-2" />
-                </div>
-                <div class="p2-content-2">
-                  <div class="group_text group_text_2" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                    <p class="text_content t-content">
-                      Sức hút của không gian sống trên “đảo tỷ phú” trước tiên đến từ tầm nhìn hướng thủy đắt giá. Với hướng nhìn ra các con sông lớn, dự án sẽ không bị che chắn bởi các công trình xây
-                      dựng. Đồng thời, hệ thống sông nước bao quanh cũng đóng vai trò “lá phổi xanh”, mang tới nguồn không khí trong lành cùng những lợi ích sức khỏe cho cư dân.
-                    </p>
-                    <p class="text_content t-content">
-                      Ngày nay, khi tìm kiếm một nơi đáng sống, giới tinh hoa còn coi trọng yếu tố phong thủy. Xét ở khía cạnh này, dự án có lợi thế khi có 3 con sông bao quanh, nằm gọn trong tầm nhìn
-                      từ cửa chính hay ban công dinh thự. Theo quan niệm, dòng nước thể hiện sinh khí không ngừng sinh sôi, dồi dào năng lượng, có ý nghĩa dẫn tài khí vào nhà - điều mà giới tinh hoa
-                      luôn đề cao.
-                    </p>
-                    <p class="text_content t-content">
-                      Lợi thế của Thành phố đảo Hoàng gia còn đến từ kết nối đa tâm: nhanh chóng di chuyển tới trung tâm thành phố Hải Phòng; cũng như trung tâm hành chính mới - thành phố Thủy Nguyên
-                      tương lai. Từ đây, cư dân và du khách thuận tiện di chuyển tới các tỉnh thành phía Bắc, nhờ các tuyến đường huyết mạch như: quốc lộ 5, quốc lộ 10, cao tốc Hà Nội - Hải Phòng, cao
-                      tốc Hải Phòng - Hạ Long - Vân Đồn - Móng Cái.
-                    </p>
-                  </div>
-                  <img src="assets/images/page-2/img-3.png" alt="" class="img img-3" />
-                  <div class="group_text group_text_3" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                    <p class="text_content t-content">
-                      Vinhomes Royal Island còn kết nối thuận tiện với bộ 3 sân bay quốc tế: Cát Bi - Nội Bài - Vân Đồn, rút ngắn thời gian di chuyển đến các tỉnh thành cũng như các thành phố lớn
-                      trong khu vực và quốc tế, chỉ trong 2 - 4 giờ bay.
-                    </p>
-                    <p class="text_content t-content">
-                      Về hạ tầng đường thủy, dự án thuận tiện kết nối cụm cảng tổng hợp, cửa ngõ ra biển lớn nhất miền Bắc. Bản thân dự án cũng sở hữu riêng một bến du thuyền đẳng cấp, định hình phong
-                      cách sống thượng lưu của cộng đồng tinh hoa.
-                    </p>
-                  </div>
-                  <img src="assets/images/page-2/img-4.png" alt="" class="img img-4" />
-                  <div class="group_text group_text_4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                    <p class="text_content t-content">Chuyên gia kinh tế Vũ Đình Ánh nhìn nhận các khu đô thị ở Việt Nam ít nơi có được vị trí đặc biệt như đảo Vũ Yên.</p>
-                  </div>
-                  <div class="quote-container">
-                    <img src="assets/images/page-2/quote-semi.png" alt="" class="img img-quote-semi" />
-                    <p>
-                      “Khi xem bản đồ, tôi kinh ngạc về tầm nhìn<br />
-                      của nhà phát triển bất động sản khi nhìn ra<br />
-                      tiềm năng của một hòn đảo như Vũ Yên,<br />
-                      nằm ngay trung tâm Hải Phòng. Rõ ràng,<br />
-                      vị trí của Vũ Yên là độc bản.”
-                    </p>
-                    <div class="line-quote"></div>
-                    <p class="quote-author">TS. Vũ Đình Ánh, Chuyên gia kinh tế</p>
-                  </div>
-                  <img src="assets/images/page-2/img-5.png" alt="" class="img img-5" />
-                </div>
-              </div>
-              <!-- page-3 ------------------ -->
-              <div class="page-3">
-                <div class="p3-content-1">
-                  <img src="assets/images/page-3/img-1.jpg" alt="" class="img img-1" />
-                  <div class="cover-text-container">
-                    <img src="assets/images/page-3/img-2.png" alt="" class="img img-2" />
-                    <img src="assets/images/page-3/img-3.png" alt="" class="img img-3" />
-                    <p>“Bộ sưu tập” <br />tiện ích thượng lưu</p>
-                  </div>
-                </div>
-                <div class="p3-content-2">
-                  <img src="assets/images/page-3/decor-1.png" alt="" class="img decor-loop decor-1" />
-                  <img src="assets/images/decor-5.png" alt="" class="img decor-loop decor-2 small" />
-                  <div class="group_text group_text_1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                    <p class="text_content t-content">
-                      Với định hướng xây dựng một cộng đồng cư dân tinh hoa, Vinhomes mang đến đảo Vũ Yên chuỗi tiện ích thượng lưu cùng hạ tầng tiện ích hiện đại lần đầu quy tụ đầy đủ trong một khu
-                      đô thị.
-                    </p>
-                    <p class="text_content t-content">
-                      Đáng chú ý phải kể đến sân golf 36 hố 160 ha hàng đầu Đông Nam Á. Được thiết kế bởi IMG Worldwide, Vinpearl Golf Hải Phòng là đảo golf trong lòng phố cảng với 36 hố golf chia
-                      thành hai sân, với phong cách riêng biệt: sân địa hình Đầm Lầy tự nhiên thách thức và sân Hồ với cảnh quan đẹp mắt cùng hệ thống hồ nước đa dạng.
-                    </p>
-                    <p class="text_content t-content">
-                      Không chỉ phục vụ nhu cầu của các tín đồ golf vào ban ngày, sân golf còn chơi được vào ban đêm với hệ thống đèn chiếu sáng tại 27 hố. Clubhouse có tới 300 phòng thay đồ, khu xông
-                      hơi thư giãn cùng nhà hàng công suất 300 khách, có phòng VIP phục vụ hội họp khoảng 30 khách hàng. Tiện ích đẳng cấp kế bên nhà mang đến cho cư dân đặc quyền trải nghiệm môn thể
-                      thao quý tộc bất cứ lúc nào mà không phải đi xa.
-                    </p>
-                  </div>
-                  <img src="assets/images/page-3/img-4.png" alt="" class="img img-4" />
-                  <img src="assets/images/page-3/img-5.png" alt="" class="img img-5" />
-                  <img src="assets/images/page-3/img-6.png" alt="" class="img img-6" />
-                  <div class="group_text group_text_2" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                    <p class="text_content t-content">
-                      Ngoài golf, Học viện cưỡi ngựa Hoàng gia, tiện ích lần đầu tiên xuất hiện tại Việt Nam và duy nhất có tại Vinhomes Royal Island, là nơi đào tạo chuyên nghiệp bộ môn cưỡi ngựa quý
-                      tộc. Nơi đây có tới 300 chuồng chăm sóc ngựa chuyên nghiệp, bệnh viện thú y cao cấp và các khu vực chăm sóc sức khỏe ngựa như khu máy tập cho ngựa, khu đóng móng…
-                    </p>
-                    <p class="text_content t-content">
-                      Học viện bao gồm các khu tập luyện cho mọi cấp độ: khu tập chuyên nghiệp, bán chuyên và khu cho người mới bắt đầu. Nơi đây cũng có khu cưỡi ngựa địa hình băng đồng thử thách bên
-                      cạnh sân đa năng biểu diễn ngựa rộng gần 1 ha cùng đồi cỏ khán đài trên cao để khách theo dõi. Bên cạnh đó, học viện cũng tích hợp đường đua ngựa giải trí, nhà đón tiếp trung tâm
-                      phong cách hoàng gia Anh cùng khu locker, khu bán lẻ dụng cụ tập từ các thương hiệu lớn trên thế giới…
-                    </p>
-                  </div>
-                  <img src="assets/images/page-3/img-7.png" alt="" class="img img-7" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Main Content -->
-
-      <!-- COMMENTS BOX -->
-      <!-- END COMMENTS BOX -->
     </div>
-    <!-- End Document Warpper -->
+    <!-- End Top Nav -->
+    <!-- Menu -->
+    <div class="mask-content"></div>
+    <div id="menu-box" class="menu-box" tabindex="5000">
+      <div class="box_width_common">
+        <div class="block_scoll_menu">
+          <ul class="list_item_panel">
+            <li>
+              <a href="https://vnexpress.net/"><i class="ic ic-m-home"></i>Trang chủ</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/thoi-su"><i class="ic ic-m-news"></i>Thời sự</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/goc-nhin"><i class="ic ic-m-opinion"></i>Góc nhìn</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/the-gioi"><i class="ic ic-m-world"></i>Thế giới</a>
+            </li>
+            <li class="active">
+              <a href="https://vnexpress.net/kinh-doanh"><i class="ic ic-m-business"></i>Kinh doanh</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/giai-tri"><i class="ic ic-m-entertainment"></i>Giải trí</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/the-thao"><i class="ic ic-m-sport"></i>Thể thao</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/phap-luat"><i class="ic ic-m-law"></i>Pháp luật</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/giao-duc"><i class="ic ic-m-education"></i>Giáo dục</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/suc-khoe"><i class="ic ic-m-health"></i>Sức khỏe</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/doi-song"><i class="ic ic-m-family"></i>Đời sống</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/du-lich"><i class="ic ic-m-travel"></i>Du lịch</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/khoa-hoc"><i class="ic ic-m-science"></i>Khoa học</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/so-hoa"><i class="ic ic-m-technology"></i>Số hóa</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/oto-xe-may"><i class="ic ic-m-car"></i>Xe</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/y-kien"><i class="ic ic-m-social"></i>Ý kiến</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/tam-su"><i class="ic ic-m-talk"></i>Tâm sự</a>
+            </li>
+            <li>
+              <a href="https://video.vnexpress.net"><i class="ic ic-m-video"></i>Video</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/anh"><i class="ic ic-m-photo"></i>Ảnh</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/infographics"><i class="ic ic-m-infographic"></i>Infographics</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/cuoi"><i class="ic ic-m-fun"></i>Cười</a>
+            </li>
+            <li>
+              <a href="https://raovat.vnexpress.net"><i class="ic ic-m-ecom"></i>Fsell</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/24h-qua" class="bg_666"><i class="ic ic-m-24h"></i>24h qua</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/lien-he-toa-soan/" class="bg_e8e8"><i class="ic ic-m-contact"></i>Liên hệ Tòa soạn</a>
+            </li>
+            <li class="end">
+              <a href="https://vnexpress.net/contact.htm" class="bg_e8e8"><i class="ic ic-m-mail"></i>Thông tin Tòa soạn</a>
+            </li>
+          </ul>
+          <div class="coppy_right_left width_common">
+            <i class="ic ic-caret-2-down"></i>
+            <div class="txt_coppy_right">
+              <p>&copy; Copyright 1997 - VnExpress.net, All rights reserved</p>
+              <p>&reg; VnExpress giữ bản quyền nội dung trên website này.</p>
+            </div>
+            <div class="txt_lienhe">
+              Hotline: <br />
+              <a href="tel:0838880123">083.888.0123 (Hà Nội)</a> <br />
+              <a href="tel:0822333555">082.233.3555 (TP HCM)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ascrail2000" class="nicescroll-rails">
+        <div class="vne-hr1"></div>
+      </div>
+      <div id="ascrail2000-hr" class="nicescroll-rails">
+        <div class="vne-hr2"></div>
+      </div>
+    </div>
+    <!-- End Menu -->
+    <!-- Main Content -->
+    <div class="section-content clearfix">
+      <div class="wrapper-content">
+        <div id="overlay"></div>
+        <div class="my_container">
+          <div class="nav-container">
+            <ul>
+              <li class="odd" targetPage="page-2">
+                <p class="">
+                  Vị trí đắc địa<br />
+                  kết nối đa tâm
+                </p>
+                <img src="assets/images/btn-decor-2.png" alt="" class="img img-nav-decor n-right" />
+                <img src="assets/images/btn-active-left.png" alt="" class="img img-nav-decor n-right active-btn" />
+              </li>
+              <li class="even" targetPage="page-3">
+                <p class="">
+                  “Bộ sưu tập”<br />
+                  tiện ích thượng lưu
+                </p>
+                <img src="assets/images/btn-decor-1.png" alt="" class="img img-nav-decor n-left" />
+                <img src="assets/images/btn-active-right.png" alt="" class="img img-nav-decor n-left active-btn" />
+              </li>
+              <li class="even" targetPage="page-4">
+                <p class="">
+                  “Bộ sưu tập”<br />
+                  tiện ích thượng lưu
+                </p>
+                <img src="assets/images/btn-decor-2.png" alt="" class="img img-nav-decor n-right" />
+                <img src="assets/images/btn-active-left.png" alt="" class="img img-nav-decor n-right active-btn" />
+              </li>
+              <li class="even" style="margin-right: 0" targetPage="page-5">
+                <p class="">
+                  “Bộ sưu tập”<br />
+                  tiện ích thượng lưu
+                </p>
+                <img src="assets/images/btn-decor-1.png" alt="" class="img img-nav-decor n-left" />
+                <img src="assets/images/btn-active-right.png" alt="" class="img img-nav-decor n-left active-btn" />
+              </li>
+            </ul>
+            <div class="back-to-home">
+              <i class="fas fa-long-arrow-right"></i>
+              <p>Về trang đầu</p>
+            </div>
+          </div>
+          <div class="page-container">
+            <!-- page-1  HOME --------  -->
+            <div class="page-loading d-none">
+              <div class="spinner-2"></div>
+            </div>
+            <div class="page-1  page-item  active-page">
+              <div class="group_image group_img_1">
+                <img loading="lazy" class="eff-screen" src="assets/images/group_1_1.png" alt="" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
+                <img loading="lazy" src="assets/images/group_1_2.png" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="400" alt="" />
+                <img src="assets/images/group_1_3.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
+                <img src="assets/images/group_1_4.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
+                <img src="assets/images/group_1_5.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
+              </div>
+              <div class="p1-content-1">
+                <img src="assets/images/decor-2.png" alt="" class="img p1-decor-2" />
+                <p class="text_title title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="300">
+                  Sân golf 36 hố, học viện cưỡi ngựa, 300 bến đỗ du thuyền… cùng <br />nhiều đặc quyền dành cho giới tinh hoa<br />
+                  đang dần lộ diện tại Vinhomes Royal Island.
+                </p>
+                <div class="group-decor-1">
+                  <img src="assets/images/decor-4.png" alt="" class="img p1-decor-4" />
+                  <img src="assets/images/decor-1.png" alt="" class="img p1-decor-1 decor-loop big" />
+                </div>
+                <div class="group_text group_text_1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Đảo Fisher Island (Florida, Mỹ) được cả thế giới biết đến khi có mật độ triệu phú đông nhất nước Mỹ, là nơi sinh sống của những doanh nhân, ngôi sao hàng đầu thế giới.
+                  </p>
+                  <p class="text_content t-content">
+                    Đảo Indian Creek (Miami, Mỹ) được mệnh danh là “đảo tỷ phú” với hệ thống an ninh khép kín bậc nhất nước Mỹ, quy tụ những nhân vật tầm cỡ nhất xứ cờ hoa như gia đình cựu Tổng
+                    thống Mỹ Donald Trump, danh ca Beyoncé hay tỷ phú Bill Gates.
+                  </p>
+                  <p class="text_content t-content">
+                    Đảo Cọ Palm Jumeirah (Dubai), nơi được coi là “kỳ quan thứ 8” của thế giới, cũng là thiên đường của giới siêu giàu Dubai với những thú vui xa hoa cùng trải nghiệm sống thượng lưu
+                    khó sao chép.
+                  </p>
+                  <p class="text_content t-content">
+                    Vinhomes Royal Island quy mô 877 ha tại Hải Phòng vừa ra mắt thị trường cũng lấy cảm hứng từ những hòn đảo tinh hoa thế giới. Nối tiếp những khu đô thị đã thay đổi diện mạo nhiều
+                    tỉnh, thành phố trên cả nước, với dự án đô thị đảo lần này, Vinhomes sẽ tiếp tục nâng chuẩn sống cho cư dân và dẫn dắt thị trường bằng mô hình đô thị chưa từng có tại Việt Nam.
+                  </p>
+                </div>
+                <img src="assets/images/img-1.png" alt="" class="img img-1" />
+              </div>
 
-    <!-- Core Script -->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.migrate.min.js"></script>
-    <script type="text/javascript" src="assets/js/header-sticky.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
-    <script type="text/javascript" src="assets/js/lib.min.js"></script>
-    <!-- End Core Script -->
+              <div class="p1-content-2"></div>
+            </div>
+            <!-- page-2 ------------------ -->
+            <div class="page-2  page-item">
+              <div class="p2-content-1">
+                <img src="assets/images/page-2/decor-1.png" alt="" class="img decor-1" />
+                <img src="assets/images/page-2/decor-2.png" alt="" class="img decor-2" />
+                <p class="title">Vị trí đắc địa <br />kết nối đa tâm</p>
+                <div class="p2-content-1-container">
+                  <img src="assets/images/page-2/img-1.png" alt="" class="img img-1" />
+                  <div class="group_text group_text_1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                    <p class="text_content t-content">
+                      Nằm trên địa bàn huyện Thủy Nguyên và quận Hải An, đảo Vũ Yên được ví như “viên ngọc xanh”, món quà thiên nhiên ban tặng cho đất cảng. Nơi đây vốn là điểm đến giàu tiềm năng
+                      với hệ sinh thái đa dạng cùng cảnh quan sông nước giao hòa, được bao bọc bởi 3 con sông lớn: Bạch Đằng, Cấm và Ruột Lợn.
+                    </p>
+                    <p class="text_content t-content">
+                      Từ lợi thế vị trí và thiên nhiên của vùng đất, Vinhomes kiến tạo tại đây không gian sống xa hoa, định danh “đảo tỷ phú” mới của Việt Nam và cả thế giới.
+                    </p>
+                  </div>
+                </div>
+                <img src="assets/images/page-2/img-2.png" alt="" class="img img-2" />
+              </div>
+              <div class="p2-content-2">
+                <div class="group_text group_text_2" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Sức hút của không gian sống trên “đảo tỷ phú” trước tiên đến từ tầm nhìn hướng thủy đắt giá. Với hướng nhìn ra các con sông lớn, dự án sẽ không bị che chắn bởi các công trình xây
+                    dựng. Đồng thời, hệ thống sông nước bao quanh cũng đóng vai trò “lá phổi xanh”, mang tới nguồn không khí trong lành cùng những lợi ích sức khỏe cho cư dân.
+                  </p>
+                  <p class="text_content t-content">
+                    Ngày nay, khi tìm kiếm một nơi đáng sống, giới tinh hoa còn coi trọng yếu tố phong thủy. Xét ở khía cạnh này, dự án có lợi thế khi có 3 con sông bao quanh, nằm gọn trong tầm nhìn
+                    từ cửa chính hay ban công dinh thự. Theo quan niệm, dòng nước thể hiện sinh khí không ngừng sinh sôi, dồi dào năng lượng, có ý nghĩa dẫn tài khí vào nhà - điều mà giới tinh hoa
+                    luôn đề cao.
+                  </p>
+                  <p class="text_content t-content">
+                    Lợi thế của Thành phố đảo Hoàng gia còn đến từ kết nối đa tâm: nhanh chóng di chuyển tới trung tâm thành phố Hải Phòng; cũng như trung tâm hành chính mới - thành phố Thủy Nguyên
+                    tương lai. Từ đây, cư dân và du khách thuận tiện di chuyển tới các tỉnh thành phía Bắc, nhờ các tuyến đường huyết mạch như: quốc lộ 5, quốc lộ 10, cao tốc Hà Nội - Hải Phòng, cao
+                    tốc Hải Phòng - Hạ Long - Vân Đồn - Móng Cái.
+                  </p>
+                </div>
+                <img src="assets/images/page-2/img-3.png" alt="" class="img img-3" />
+                <div class="group_text group_text_3" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Vinhomes Royal Island còn kết nối thuận tiện với bộ 3 sân bay quốc tế: Cát Bi - Nội Bài - Vân Đồn, rút ngắn thời gian di chuyển đến các tỉnh thành cũng như các thành phố lớn
+                    trong khu vực và quốc tế, chỉ trong 2 - 4 giờ bay.
+                  </p>
+                  <p class="text_content t-content">
+                    Về hạ tầng đường thủy, dự án thuận tiện kết nối cụm cảng tổng hợp, cửa ngõ ra biển lớn nhất miền Bắc. Bản thân dự án cũng sở hữu riêng một bến du thuyền đẳng cấp, định hình phong
+                    cách sống thượng lưu của cộng đồng tinh hoa.
+                  </p>
+                </div>
+                <img src="assets/images/page-2/img-4.png" alt="" class="img img-4" />
+                <div class="group_text group_text_4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">Chuyên gia kinh tế Vũ Đình Ánh nhìn nhận các khu đô thị ở Việt Nam ít nơi có được vị trí đặc biệt như đảo Vũ Yên.</p>
+                </div>
+                <div class="quote-container">
+                  <img src="assets/images/page-2/quote-semi.png" alt="" class="img img-quote-semi" />
+                  <p>
+                    “Khi xem bản đồ, tôi kinh ngạc về tầm nhìn<br />
+                    của nhà phát triển bất động sản khi nhìn ra<br />
+                    tiềm năng của một hòn đảo như Vũ Yên,<br />
+                    nằm ngay trung tâm Hải Phòng. Rõ ràng,<br />
+                    vị trí của Vũ Yên là độc bản.”
+                  </p>
+                  <div class="line-quote"></div>
+                  <p class="quote-author">TS. Vũ Đình Ánh, Chuyên gia kinh tế</p>
+                </div>
+                <img src="assets/images/page-2/img-5.png" alt="" class="img img-5" />
+              </div>
+            </div>
+            <!-- page-3 ------------------ -->
+            <div class="page-3 page-item">
+              <div class="p3-content-1">
+                <img src="assets/images/page-3/img-1.jpg" alt="" class="img img-1" />
+                <div class="cover-text-container">
+                  <img src="assets/images/page-3/img-2.png" alt="" class="img img-2" />
+                  <img src="assets/images/page-3/img-3.png" alt="" class="img img-3" />
+                  <p>“Bộ sưu tập” <br />tiện ích thượng lưu</p>
+                </div>
+              </div>
+              <div class="p3-content-2">
+                <img src="assets/images/page-3/decor-1.png" alt="" class="img decor-loop decor-1" />
+                <img src="assets/images/decor-5.png" alt="" class="img decor-loop decor-2 small" />
+                <div class="group_text group_text_1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Với định hướng xây dựng một cộng đồng cư dân tinh hoa, Vinhomes mang đến đảo Vũ Yên chuỗi tiện ích thượng lưu cùng hạ tầng tiện ích hiện đại lần đầu quy tụ đầy đủ trong một khu
+                    đô thị.
+                  </p>
+                  <p class="text_content t-content">
+                    Đáng chú ý phải kể đến sân golf 36 hố 160 ha hàng đầu Đông Nam Á. Được thiết kế bởi IMG Worldwide, Vinpearl Golf Hải Phòng là đảo golf trong lòng phố cảng với 36 hố golf chia
+                    thành hai sân, với phong cách riêng biệt: sân địa hình Đầm Lầy tự nhiên thách thức và sân Hồ với cảnh quan đẹp mắt cùng hệ thống hồ nước đa dạng.
+                  </p>
+                  <p class="text_content t-content">
+                    Không chỉ phục vụ nhu cầu của các tín đồ golf vào ban ngày, sân golf còn chơi được vào ban đêm với hệ thống đèn chiếu sáng tại 27 hố. Clubhouse có tới 300 phòng thay đồ, khu xông
+                    hơi thư giãn cùng nhà hàng công suất 300 khách, có phòng VIP phục vụ hội họp khoảng 30 khách hàng. Tiện ích đẳng cấp kế bên nhà mang đến cho cư dân đặc quyền trải nghiệm môn thể
+                    thao quý tộc bất cứ lúc nào mà không phải đi xa.
+                  </p>
+                </div>
+                <img src="assets/images/page-3/img-4.png" alt="" class="img img-4" />
+                <img src="assets/images/page-3/img-5.png" alt="" class="img img-5" />
+                <img src="assets/images/page-3/img-6.png" alt="" class="img img-6" />
+                <div class="group_text group_text_2" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Ngoài golf, Học viện cưỡi ngựa Hoàng gia, tiện ích lần đầu tiên xuất hiện tại Việt Nam và duy nhất có tại Vinhomes Royal Island, là nơi đào tạo chuyên nghiệp bộ môn cưỡi ngựa quý
+                    tộc. Nơi đây có tới 300 chuồng chăm sóc ngựa chuyên nghiệp, bệnh viện thú y cao cấp và các khu vực chăm sóc sức khỏe ngựa như khu máy tập cho ngựa, khu đóng móng…
+                  </p>
+                  <p class="text_content t-content">
+                    Học viện bao gồm các khu tập luyện cho mọi cấp độ: khu tập chuyên nghiệp, bán chuyên và khu cho người mới bắt đầu. Nơi đây cũng có khu cưỡi ngựa địa hình băng đồng thử thách bên
+                    cạnh sân đa năng biểu diễn ngựa rộng gần 1 ha cùng đồi cỏ khán đài trên cao để khách theo dõi. Bên cạnh đó, học viện cũng tích hợp đường đua ngựa giải trí, nhà đón tiếp trung tâm
+                    phong cách hoàng gia Anh cùng khu locker, khu bán lẻ dụng cụ tập từ các thương hiệu lớn trên thế giới…
+                  </p>
+                </div>
+                <img src="assets/images/page-3/img-7.png" alt="" class="img img-7" />
+              </div>
+              <div class="p3-content-3">
+                <img src="assets/images/decor-7.png" alt="" class="img decor-2 decor-loop big" />
+                <img src="assets/images/decor-6.png" alt="" class="img decor-3 decor-loop " />
+                <div class="slide-container slide-1-container">
 
-    <script type="text/javascript" src="assets/js/aos.js"></script>
-    <script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
-    <script type="text/javascript" src="assets/js/swiper.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.min.js"></script>
-    <script>
-      AOS.init({ offset: 120, duration: 3000 });
-      document.querySelectorAll("img").forEach((img) => img.addEventListener("load", () => AOS.refresh()));
-    </script>
-  </body>
+                </div>
+                <div class="group_text group_text_3" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    “Bộ sưu tập” những tiện ích được “đo ni đóng giày” cho giới thượng lưu còn có bến thuyền cao cấp gần 10 ha với hơn 300 bến đỗ du thuyền, khu sửa chữa tàu rộng 3.800 m2; nhà đón tiếp sang trọng. Không chỉ phục vụ nhu cầu giải trí thời thượng, những chiếc du thuyền còn mang đến cho chủ nhân một không gian riêng tư, sang trọng để thảo luận công việc và gây dựng quan hệ với các đối tác.
+                  </p>
+                  <p class="text_content t-content">
+                    Cũng tại Vinhomes Royal Island, biệt thự với bãi tắm nước biển riêng ngay sau nhà, sẽ là nơi các khách hàng thượng lưu tận hưởng đặc quyền nghỉ dưỡng xa xỉ mỗi ngày. Vài bước chân là ra tới biển, cư dân có thể đắm mình với biển xanh, cát trắng, nắng vàng suốt 365 ngày trong năm ngay tại ngôi nhà mình sống.
+                  </p>
+
+                </div>
+                <div class="group_image group_img_1">
+                  <img loading="lazy" class="eff-screen" src="assets/images/page-3/group_1_1.png" alt="" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
+                  <img src="assets/images/page-3/group_1_2.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
+                  <img src="assets/images/page-3/group_1_3.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
+                </div>
+                <div class="quote-container quote-1">
+                  <img src="assets/images/page-2/quote-semi.png" alt="" class="img img-quote-semi" />
+                  <p>
+                    “Với hạ tầng hiện đại và hoàn thiện, <br>
+                    câu chuyện sáng thức dậy đánh golf, trưa lái xe<br> gặp đối tác tại Hà Nội hay ngồi máy bay đi giao<br> dịch tại Đà Nẵng, TP HCM, chiều về thong dong<br> cưỡi ngựa, tối quây quần cùng gia đình ăn tối bên<br> bãi biển sau nhà có thể thành hiện thực với cư<br> dân dự án.”
+                  </p>
+                  <div class="line-quote"></div>
+                  <p class="quote-author">Đại diện một đại lý phân phối bất động sản</p>
+                </div>
+
+                <div class="group_text group_text_3" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Ngoài ra, phố đi bộ văn hóa, vui chơi, mua sắm, ẩm thực bờ sông dài và đẹp nhất Việt Nam sẽ được triển khai tại dự án. Các tuyến phố được phân theo từng chủ đề. Tuyến phố Tình yêu nổi bật với đài phun nước nghệ thuật và biểu tượng khóa tình yêu, là nơi các cặp đôi kết lời thề hẹn. Tuyến phố Trẻ em và Gia đình với những quầy hàng hình thù ngộ nghĩnh như những lon nước khổng lồ, artwork thần tiên cổ tích, cùng những trò chơi đặc sắc: vòng quay ngựa gỗ carousel, cốc xoay và skydrop cảm giác mạnh, nhà phao, thú nhún… hấp dẫn trẻ thơ. Mang đậm dấu ấn văn hoá đất Cảng là tuyến phố Hải Phòng và Biển, nổi bật với tượng đồng Chọi trâu Đồ Sơn cùng những hình ảnh đặc trưng của biển cả như mỏ neo, hội đua thuyền, lính hải quân…
+                  </p>
+                  <p class="text_content t-content">
+                    Cư dân và du khách còn có thể thưởng thức phố chợ ẩm thực đa dạng, từ chợ đêm Hàn Quốc, Thái Lan, chợ đêm hải sản 3 miền, phố chợ thiên đường ăn vặt Hải Phòng… Tuyến phố đi bộ được vây quanh bởi quần thể hơn 2.000 căn shop, mang tới bầu sinh khí mới sôi động và nhộp nhịp cho đảo Vũ Yên. Chủ đầu tư kỳ vọng tạo nên điểm đến hàng đầu miền Bắc về ẩm thực, văn hóa, mua sắm, góp phần gia tăng giá trị cho các bất động sản nơi đây.
+                  </p>
+                </div>
+
+
+              </div>
+              <div class="p3-content-4">
+                <div class="slide-container slide-2-container">
+
+                </div>
+                <div class="group_text group_text_4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Không gian gắn kết dành cho các gia đình cũng sẽ hiện hữu tại đảo Vũ Yên trong tương lai. Nổi bật trong số đó là công viên vui chơi giải trí gia đình VinWonders Royal Park với Safari thú độc đáo. Đây là không gian bảo tồn, chăm sóc nhiều loài động vật hoang dã như kangaroo, hổ, voi, sư tử, tê giác, hươu cao cổ, thú đồng cỏ, bò sát, các loài thú linh trưởng độc đáo và vườn chim… Ngoài ra, khu Kid Zoo trẻ em tương tác cùng thú lành cũng sẽ hiện diện tại đây.
+
+                  </p>
+                  <p class="text_content t-content">
+                    Bên cạnh đó, vườn cổ tích, công viên vui chơi trẻ em và gia đình với hàng loạt trò chơi hấp dẫn cũng sẽ sớm xuất hiện giữa đảo Vũ Yên trong tương lai.
+                    phong cách hoàng gia Anh cùng khu locker, khu bán lẻ dụng cụ tập từ các thương hiệu lớn trên thế giới…
+                  </p>
+                  <p class="text_content t-content">
+                    Là nhà phân phối với hơn 10 năm đồng hành cùng Vinhomes, ông Hoàng Đình Khiêm - Chủ tịch HĐQT Công ty cổ phần Vietstarland, cho rằng không có dự án nào đặc biệt hơn Thành phố đảo Hoàng Gia. Chất sống đẳng cấp tại đây là niềm khát khao của nhiều người.
+                  </p>
+                </div>
+
+                <div class="quote-container quote-2">
+                  <img src="assets/images/page-2/quote-semi.png" alt="" class="img img-quote-semi" />
+                  <p>
+                    “Thế giới có gì thì Vinhomes Royal Island có đó,<br> thậm chí còn có nhiều hơn thế nữa”
+                  </p>
+                  <div class="line-quote"></div>
+                  <p class="quote-author">Ông Hoàng Đình Khiêm, Chủ tịch HĐQT Công ty cổ phần Vietstarland</p>
+                </div>
+                <img src="assets/images/page-3/img-8.png" alt="" class="img img-8">
+              </div>
+            </div>
+
+            <!-- // Page 4 ---------------  -->
+            <div class="page-4 page-item">
+              <div class="p4-content-1">
+                <img src="assets/images/page-4/img-1.png" alt="" class="img img-1">
+                <div class="cover-text-container">
+                  <img src="assets/images/page-3/img-3.png" alt="" class="img img-3" />
+                  <p>Đặc quyền <br />sống tinh hoa</p>
+
+                </div>
+
+              </div>
+              <div class="p4-content-2">
+                <img src="assets/images/decor-5.png" alt="" class="img decor-loop decor-1 small" />
+                <div class="quote-container quote-1">
+                  <img src="assets/images/page-2/quote-semi.png" alt="" class="img img-quote-semi" />
+                  <p>
+                    Giàu thường đi đôi với sang. Dự án này sẽ cho<br> người giàu của Việt Nam và thế giới <br>
+                    điều mà họ mong muốn, đó là sự sang, <br>là những đặc quyền”
+                  </p>
+                  <div class="line-quote"></div>
+                  <p class="quote-author">TS. Vũ Đình Ánh, Chuyên gia kinh tế</p>
+                </div>
+                <div class="group_text group_text_1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Chăm sóc sức khỏe tại chỗ cho cư dân Thành phố Đảo Hoàng Gia là Vinmec, thương hiệu y tế tiêu chuẩn quốc tế của Vingroup. Trong đó, phòng khám đa khoa Quốc tế Vinmec với trang thiết bị hiện đại, bác sĩ tận tâm chuyên môn cao, cung cấp dịch vụ y tế chất lượng cao cho cư dân và du khách tại khu đô thị.
+                  </p>
+                  <p class="text_content t-content">
+                    Đặc biệt, lần đầu tiên dịch vụ đặc quyền y tế tận nhà được Vinhomes và Vinmec phối hợp triển khai với hai nhánh dịch vụ: khám chữa bệnh và chăm sóc y tế tại chỗ. Cư dân gọi hotline riêng có thể mời được bác sĩ hoặc điều dưỡng Vinmec đến khám bệnh, kê đơn, giao thuốc, lấy mẫu xét nghiệm tại nhà hay gọi sơ cứu, cấp cứu nhanh chóng kịp thời. Các nhóm dịch vụ chăm sóc tại chỗ bao gồm: dịch vụ mẹ sau sinh và bé, dịch vụ chăm sóc người cao tuổi và chăm sóc hậu phẫu.
+                  </p>
+
+                </div>
+                <img src="assets/images/page-4/img-2.png" alt="" class="img img-2">
+                <div class="group_text group_text_2" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Ươm mầm cho thế hệ cư dân nhí Thành phố đảo Hoàng Gia là hệ thống giáo dục tư thục lớn nhất Việt Nam, với hệ thống 7 trường mầm non, tiểu học, THCS và liên cấp Vinschool. Nơi đây cũng có trường quốc tế Hàn Quốc đầu tiên tại Hải Phòng, nơi chương trình và môi trường học chất lượng cao được Bộ Giáo dục Hàn Quốc công nhận. Trường không chỉ đạt chuẩn quốc tế mà còn cho phép học sinh được chuyển tiếp lộ trình học tập Hàn - Việt.
+                  </p>
+                </div>
+              </div>
+              <div class="p4-content-3">
+                <img src="assets/images/decor-7.png" alt="" class="img decor-2 decor-loop big" />
+                <img src="assets/images/page-4/img-3.png" alt="" class="img img-3">
+              </div>
+              <div class="p4-content-4">
+                <img src="assets/images/decor-1.png" alt="" class="img decor-3 decor-loop big" />
+                <div class="group_text group_text_3" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Tại đây, Vincom Mega mall với mô hình Life-Design Mall không chỉ là trung tâm mua sắm đẳng cấp, kiến trúc hiện đại với hàng trăm thương hiệu nổi tiếng thế giới, mà còn là điểm hẹn vui chơi giải trí - mua sắm - trải nghiệm thời thượng, nơi mọi thành viên trong gia đình đều tìm thấy niềm vui.
+                  </p>
+                  <p class="text_content t-content">
+                    Khu đô thị này có hai công viên văn hóa quốc tế đặc sắc ven sông. Đơn cử, Công viên Văn hóa Hàn Quốc K-Park lần đầu tiên có tại Hải Phòng với công viên đèn lồng nghệ nhân chiếu sáng đặc sắc, cổng chào, chòi cảnh quan, quảng trường và các khu vườn Hàn đầy thu hút… Quảng trường châu Âu tráng lệ với tháp Mặt trời cao 45m và sân khấu nhạc nước sử dụng công nghệ trình chiếu nhạc nước và màn ảnh nước 3D độc đáo… cũng sẽ có mặt tại đây.
+                  </p>
+                </div>
+                <div class="group_image group_img_1">
+                  <img loading="lazy" class="eff-screen" src="assets/images/page-4/group_1_1.png" alt="" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
+                  <img src="assets/images/page-4/group_1_2.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
+                  <img src="assets/images/page-4/group_1_3.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
+                </div>
+                <div class="group_text group_text_4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Ngoài ra, dự án cũng ghi điểm với hệ thống công viên cây xanh cảnh quan cùng tiện ích vui chơi, thể thao đa dạng mang lại cho cư dân trải nghiệm sống gần gũi thiên nhiên. 31 công viên với tổng diện tích gần 18 ha, với 6 công viên chuyên đề là sự kết hợp giữa các công viên trò chơi vận động liên hoàn, công viên cây xanh, công viên BBQ, công viên vui chơi trẻ em, quảng trường… Tất cả được phân bổ đều toàn dự án, mang đến đa dạng trải nghiệm vui chơi, tận hưởng bốn mùa cho cư dân và khách hàng.
+                  </p>
+                  <p class="text_content t-content">
+                    Những cư dân yêu thể thao sẽ thoả đam mê và tận hưởng cuộc sống với 10 bể bơi trong nhà và ngoài trời tổng diện tích mặt nước hàng chục nghìn m2 cùng tổ hợp sân tennis, các sân cầu lông, bóng đá, bóng chuyền, các vườn tập dưỡng sinh cùng các vườn tập gym… phân bổ khắp dự án.
+                  </p>
+                  <p class="text_content t-content">
+                    Dự án cũng sở hữu trung tâm hội nghị tiệc cưới Royal Palace sức chứa lên đến 3.000 người trong nhà, cùng hơn 2.000 người ngoài trời, nơi tổ chức tiệc cưới sang trọng.
+                  </p>
+                </div>
+                <img src="assets/images/page-4/img-4.png" alt="" class="img img-4">
+              </div>
+            </div>
+            <!-- // Page 5 ---------------  -->
+            <div class="page-5 page-item">
+              <div class="p5-content-1">
+                <img src="assets/images/decor-3.png" alt="" class="img decor-1 decor-loop" />
+                <div class="cover-text-container">
+
+                  <img src="assets/images/page-3/img-3.png" alt="" class="img img-3" />
+                  <p>“Tấm khiên” <br />an ninh nhiều lớp</p>
+                </div>
+
+                <div class="window-content">
+                  <div class="group_text group_text_1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                    <p class="text_content t-content">
+                      Tại Vinhomes Royal Island, chủ đầu tư kiến tạo hệ thống an n inh tăng cường, đảm bảo an toàn cho cư dân 24/7, kiểm soát an ninh vòng ngoài bằng hệ thống chốt an ninh và barie kiểm soát (từ 22h đêm đến 6h sáng hôm sau), hệ thống kiểm soát an ninh qua ứng dụng công nghệ AI. Đặc biệt, tàu tuần tra trên sông cũng sẽ được triển khai, đảm bảo an toàn cho Thành phố Đảo Hoàng Gia.
+                    </p>
+                    <p class="text_content t-content">
+                      Song song đó, môi trường, cảnh quan, hệ thống hạ tầng kỹ thuật sẽ được duy trì, chăm sóc chỉn chu. Bộ máy chăm sóc khách hàng với các nhân viên nhiệt tình, tận tâm, chuyên nghiệp và lịch sự, sẵn sàng hỗ trợ cư dân trong mọi tình huống.
+                    </p>
+                    <p class="text_content t-content">
+                      Ngoài ra, hệ thống hotline tổng đài hỗ trợ 24/7, app cư dân Vinhomes Resident là kênh cung cấp các thông tin kết nối, tương tác, đảm bảo kịp thời giải quyết các sự cố, vướng mắc và các vấn đề cần giải đáp, hỗ trợ cho cư dân tai khu đô thị.
+                    </p>
+                  </div>
+                </div>
+                <div class="group_image group_img_1">
+                  <img loading="lazy" class="eff-screen" src="assets/images/page-5/group_1_1.png" alt="" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
+                  <img src="assets/images/page-5/group_1_2.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
+                  <img src="assets/images/page-5/group_1_3.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
+                  <img src="assets/images/page-5/group_1_4.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
+                </div>
+                <img src="assets/images/page-5/img-2.png" alt="" class="img img-2">
+              </div>
+              <div class="p5-content-2">
+                <img src="assets/images/decor-7.png" alt="" class="img decor-2 decor-loop big" />
+                <div class="group_text group_text_2" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Đồng thời, hai câu lạc bộ Sống Vui - Khỏe và Sống Xanh - Văn minh - Đẳng cấp được hỗ trợ phần lớn kinh phí hoạt động từ chủ đầu tư, với các phong trào, giải thi đấu mang lại cộng đồng thân thiện, gắn bó đoàn kết, sống xanh, vui, khỏe, văn minh như giải Golf Vinhomes, cầu lông, tennis, dưỡng sinh, giải thi đấu cưỡi ngựa…
+                  </p>
+                  <p class="text_content t-content">
+                    “Với Vinhomes Royal Island, Vinhomes muốn kiến tạo một không gian sống hàng ngày nhưng đặc biệt, cao cấp dành cho giới tinh hoa Việt Nam và quốc tế; không chỉ góp phần thu hút các nhà đầu tư, doanh nhân tài giỏi khắp thế giới mà còn góp phần nâng tầm thị trường bất động sản Việt Nam”, đại diện Vinhomes khẳng định.
+                  </p>
+                  <p class="text_content t-content">
+                    Là chuyên gia có nhiều năm kinh nghiệm nghiên cứu các mô hình đô thị trên thế giới, TS. Nguyễn Văn Đính, Phó Chủ tịch Hiệp hội Bất động sản Việt Nam, cho rằng các dự án hạng sang hướng tới giới thượng lưu trên thế giới không nhiều, và thành phố đảo Hoàng gia là dự án có nhiều yếu tố vượt trội.
+                  </p>
+                </div>
+                <div class="quote-container quote-1">
+                  <img src="assets/images/page-2/quote-semi.png" alt="" class="img img-quote-semi" />
+                  <p>
+                    “Thị trường dành cho giới thượng lưu<br>
+                    rất tiềm năng. Giới thượng lưu thường<br>
+                    tìm đến những nơi có giá trị đặc biệt,<br>
+                    có thiên nhiên, môi trường khác biệt,<br>
+                    tiện ích đẳng cấp… Vinhomes Royal Island hội tụ<br> các yếu tố đó. Chủ đầu tư Vinhomes đang đi đúng<br> hướng trong việc phát triển các sản phẩm giá trị,<br> đẳng cấp để phục vụ giới thượng lưu”
+                  </p>
+                  <div class="line-quote"></div>
+                  <p class="quote-author">TS. Nguyễn Văn Đính, <br>
+                    Phó Chủ tịch Hiệp hội Bất động sản Việt Nam</p>
+                </div>
+              </div>
+              <div class="p5-content-3">
+                <img src="assets/images/page-5/img-3.png" alt="" class="img img-3">
+                <div class="slide-container slide-1">
+                  <img src="assets/images/page-5/slide-1.jpg" alt="" class="img test">
+                </div> <img src="assets/images/page-5/img-4.png" alt="" class="img img-4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- COMMENTS BOX -->
+    <!-- END COMMENTS BOX -->
+  </div>
+  <!-- End Document Warpper -->
+
+  <!-- Core Script -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.migrate.min.js"></script>
+  <script type="text/javascript" src="assets/js/header-sticky.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib.min.js"></script>
+  <!-- End Core Script -->
+
+  <script type="text/javascript" src="assets/js/aos.js"></script>
+  <script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
+  <script type="text/javascript" src="assets/js/swiper.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.min.js"></script>
+  <script>
+    AOS.init({ offset: 120, duration: 3000 });
+    document.querySelectorAll("img").forEach((img) => img.addEventListener("load", () => AOS.refresh()));
+  </script>
+</body>
+
 </html>
